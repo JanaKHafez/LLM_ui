@@ -1,6 +1,5 @@
 from typing import List, Tuple
 import streamlit as st
-import json
 import networkx as nx
 from pydantic import BaseModel, Field, Dict, Any, Optional
 from sentence_transformers import SentenceTransformer
@@ -9,15 +8,16 @@ from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain.schema import Document
 from langchain.embeddings.base import Embeddings
 import faiss
-import pickle
 from openai import AsyncOpenAI
 from transformers import AutoTokenizer
 
+import pickle
 import random
 import time
 import os
 import numpy as np
 import re
+import json
 
 class Documentation(BaseModel):
     """Documentation of a code object."""

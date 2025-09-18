@@ -1,11 +1,10 @@
 streamlit
-json
 networkx
 pydantic
 sentence_transformers
 langchain
 langchain_community
-faiss
-pickle
+faiss-cpu
+
 openai
 transformers
