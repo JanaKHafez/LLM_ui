@@ -1,7 +1,7 @@
-from typing import List, Tuple
+from typing import Dict, List, Optional, Any
 import streamlit as st
 import networkx as nx
-from pydantic import BaseModel, Field, Dict, Any, Optional
+from pydantic import BaseModel, Field
 from sentence_transformers import SentenceTransformer
 from langchain.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
@@ -615,6 +615,6 @@ if prompt := st.chat_input("What is up?"):
 
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
-        response = st.write_stream(response_generator())
+        response = st.write_stream(generate_response(prompt))
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
