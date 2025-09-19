@@ -1,0 +1,12 @@
+{
+  "output_dir": "/home/janhaf2n/SiemensLLMs/OutputNotebook/",
+  "code_repo_root": "/home/dtadros/PTSSPreprocWorkspace/src/PSS/src/",
+  "existing_docs_file": "/home/janhaf2n/SiemensLLMs/PTSS_Confluence.txt",
+  "base_url": "http://Public-Bedrock-PTSS-Proxy-LB-3f3884ff069a781d.elb.us-west-2.amazonaws.com/api/v1",
+  "model_name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+  "api_key": "sEJug9M2pahd",
+  "temperature": 0.2,
+  "top_p": 0.9,
+  "max_output_tokens": 8192,
+  "max_tokens": 1000000
+}
