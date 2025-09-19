@@ -456,7 +456,7 @@ class SubQuestionsClient:
         # response = input("enter response: ")
         # return subQuestions.model_validate_json(response)
 
-def load(file_path: str = "../configurations.json"):
+def load(file_path: str = "configurations.json"):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found: {file_path}")
     
